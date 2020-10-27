@@ -1,0 +1,309 @@
+body{
+    background: radial-gradient(circle, rgba(127,86,203,1) 0%, rgba(85,91,234,1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+#wrapper{
+    padding-bottom: 40px;
+}
+
+.header{    
+    flex: 1;
+    display: flex;
+    background-color: rgb(2, 30, 56);
+    color: rgb(219, 219, 218);
+    height: 55px;
+    font-weight: bold;    
+}
+
+#logo{    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+    max-width: 75%;
+    max-height: 75%;    
+    object-fit: contain;
+}
+
+#header_title1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: x-large;
+}
+
+#header_title2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: x-large;
+}
+
+#headImage{
+    display: flex;
+    width: 100%;
+    box-shadow: 3px 3px  20px  rgb(29, 28, 28);
+}
+
+.imagen_banner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered_image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 4px 4px 8px black;
+}
+
+.form_datos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.form_datos .datos_label{
+    float: left;
+    padding: 5px;
+}
+
+.campo_ingreso input{
+    width: 97%;
+    padding: 5px;
+}
+
+p#validar_user_result{
+    font-weight: normal;
+    font-size: medium;
+    text-align: center;
+}
+
+p#userStatus{ 
+    background: transparent;
+    color: whitesmoke;
+    height: 20px;
+    min-width: 30%;
+    padding: 5px 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 60px;
+    text-shadow: 3px 3px 5px rgb(48, 47, 47);
+}
+
+
+.navigationMenu{
+    display: flex;
+    justify-content: center;    
+}
+
+.navigationMenu p{
+    flex-basis: 3%;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+    margin: 2px;
+    color: whitesmoke;
+}
+
+.navigationMenu p:hover , #btn_validar_usuario:hover, #btnVerResultado:hover {
+    cursor: pointer;
+}
+
+#arrowBack , #arrowFoward{
+    border: 0px;
+}
+
+/* Interruptor de Preguntas */
+
+#quiz1 {
+    display: block;
+}
+#quiz2 {
+    display: none;
+}
+#quiz3 {
+    display: none;
+}
+#quiz4 {
+    display: none;
+}
+#quiz5 {
+    display: none;
+}
+#quiz6 {
+    display: none;
+}
+#quiz7 {
+    display: none;
+}
+#quiz8 {
+    display: none;
+}
+#quiz9 {
+    display: none;
+} 
+/*//////////////////////////////*/
+
+div.quiz_block{   
+    width: 50%;
+    border: 3px whitesmoke solid;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.quiz_img{
+    display: block;
+    max-width: 30%;
+    max-height: 30%;
+    margin-left: auto;
+    margin-right: auto;     
+    margin-top: 5px;   
+}
+
+p.quiz_pregunta{
+    text-align: center;   
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+div.quiz_options {
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-inline input {
+    margin-left: 15px;    
+}
+
+#selector_multiple{
+    margin-top: 10px;
+}
+
+.multi_sel{
+    margin-right: 8px;
+    
+}
+
+.quiz_submit {
+    background-image: linear-gradient(to right, #FEAC5E 0%, #C779D0  51%, #FEAC5E  100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;    
+    font-weight: bold;
+    border: 0px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgb(49, 49, 49);
+    display: block;
+}
+
+.quiz_submit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+}
+
+#question_grid{
+    display: none;
+}
+
+p#resultadoNota{ 
+    background: transparent;
+    color: whitesmoke;
+    height: 20px;
+    width: 35%;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2.5px solid whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    display: block;
+}
+
+#resultadoTexto{
+    background: transparent;
+    margin-bottom: 50px;
+    color: whitesmoke;
+    width: 35%;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2.5px solid whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#resultPage{
+    display: none;
+}
+
+
+footer{   
+    position: absolute;
+    bottom:0;
+    background-color: rgb(0, 5, 8);
+    color: rgb(219, 219, 218);
+    height: 40px;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+footer p{
+    display: block;
+    text-align: center;
+    font-size: small;
+
+}
+
+div.quiz_block {    
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cuestionario Richard Stallman</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="listadoAlumnos.js"></script>
+
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+
+            <header class="header">
+                <p id="header_title1">Campus Virtual</p>
+                <img src="https://i.imgur.com/T5eQVTL.png" alt="logo_utn" id="logo">
+
+                <p id="header_title2">Exámen a Distancia</p>
+            </header>
+
+            <div class="imagen_banner">
+                <img src="https://i.imgur.com/P7dgjnT.jpg" alt="it_img" id="headImage">
+                <div class="centered_image">PROGRAMACIÓN III</div>
+            </div>
+
+
+            <form class="form_datos" id="user_validation_submit">
+                <fieldset>
+                    <legend>Datos del Alumno</legend>
+
+                    <!-- Nombre -->
+                    <div class="campo_datos">
+                        <label class="datos_label" for="nombre">Nombre y Apellido:</label>
+                        <div class="campo_ingreso">
+                            <input id="nombre" name="nombre" type="text" placeholder="ingrese su nombre y apellido "
+                                required="">
+                        </div>
+                    </div>
+
+                    <!-- Mail -->
+                    <div class="campo_datos">
+                        <label class="datos_label" for="mail">Mail: </label>
+                        <div class="campo_ingreso">
+                            <input id="mail" name="mail" type="text" placeholder="ingrese su e-mail" required="">
+
+                        </div>
+                    </div>
+
+                    <!-- foto Libreta -->
+                    <div class="campo_datos">
+                        <label class="datos_label" for="subirArchivo">Foto de Libreta:</label>
+                        <div class="campo_ingreso">
+                            <input id="subirArchivo" name="subirArchivo" class="input-file" type="file">
+                        </div>
+                    </div>
+
+                    <!-- Clave campus-->
+                    <div class="campo_datos">
+                        <label class="datos_label" for="claveCurso">Clave del Curso: </label>
+                        <div class="campo_ingreso">
+                            <input id="claveCurso" name="claveCurso" type="password"
+                                placeholder="ingrese la clave del curso" required="">
+                        </div>
+                    </div>
+
+                    <!-- Submit-->
+
+
+                    <button type="button" class="quiz_submit" id="btn_validar_usuario"
+                        form="user_validation_submit">Validar
+                        Usuario</button>
+
+
+                    <p id="validar_user_result"></p>
+
+
+                    <script src="userVerification.js"></script>
+
+                </fieldset>
+            </form>
+
+            <div id="question_grid">
+
+                <p id="userStatus"></p>
+
+                <!-- <h1>PREGUNTAS</h1> -->
+
+                <div class="navigationMenu">
+                    <p id="arrowBack">&#9194;</p>
+                    <p id="nav1">1</p>
+                    <p id="nav2">2</p>
+                    <p id="nav3">3</p>
+                    <p id="nav4">4</p>
+                    <p id="nav5">5</p>
+                    <p id="nav6">6</p>
+                    <p id="nav7">7</p>
+                    <p id="nav8">8</p>
+                    <p id="nav9">9</p>
+                    <p id="arrowFoward">&#9193;</p>
+                </div>
+
+                <!-- _______________________PREGUNTA 1_________________________________-->
+                <div class="quiz_block" id="quiz1">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 1</p> -->
+
+                    <img src="https://i.imgur.com/chJDagD.png" alt="gnu_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Seleccione los elementos que formen parte de GNU OS</p>
+
+                    <form class="form-horizontal">
+
+                        <!-- Checkboxes Multiples -->
+                        <div class="form-group">
+
+                            <div class="col-md-4">
+                                <label class="checkbox-inline" for="q1-0">
+                                    <input type="checkbox" name="q1" id="q1-0" value="Sed">
+                                    Sed
+                                </label>
+                                <label class="checkbox-inline" for="q1-1">
+                                    <input type="checkbox" name="q1" id="q1-1" value="Nano">
+                                    Nano
+                                </label>
+                                <label class="checkbox-inline" for="q1-2">
+                                    <input type="checkbox" name="q1" id="q1-2" value="Vim">
+                                    Vim
+                                </label>
+                                <label class="checkbox-inline" for="q1-3">
+                                    <input type="checkbox" name="q1" id="q1-3" value="Grep">
+                                    Grep
+                                </label>
+                                <label class="checkbox-inline" for="q1-4">
+                                    <input type="checkbox" name="q1" id="q1-4" value="DWM">
+                                    DWM
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- _______________________PREGUNTA 2_________________________________-->
+
+                <div class="quiz_block" id="quiz2">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 2</p> -->
+
+                    <img src="https://i.imgur.com/AV8EhLl.png" alt="emacs_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Se puede utilizar GNU Emacs como Window Manager?</p>
+
+                    <form class="form-horizontal">
+
+                        <!-- Radios -->
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="q2-0">
+                                    <input type="radio" name="q2" id="q2-0" value="Si">
+                                    Si
+                                </label>
+                                <label class="radio-inline" for="q2-1">
+                                    <input type="radio" name="q2" id="q2-1" value="No">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <!-- _______________________PREGUNTA 3_________________________________-->
+
+                <div class="quiz_block" id="quiz3">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 3</p> -->
+
+                    <img src="https://i.imgur.com/bJ02RfA.png" alt="GPL_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Seleccione un software que se distribuya bajo GPL y su función</p>
+
+                    <form class="form-horizontal">
+                        <!-- 1 Selector -->
+                        <div class="form-group">
+                            <label for="q3-0" class="multi_sel">Software </label>
+                            <div class="col-md-4">
+                                <select id="q3-0" name="q3-0" class="form-control">
+                                    <option value="NeoVim" selected="selected">NeoVim</option>
+                                    <option value="GIMP">GIMP</option>
+                                    <option value="Google Chrome">Google Chrome</option>
+                                    <option value="Blender">Blender</option>
+                                    <option value="Microsfot Excel">Microsfot Excel</option>
+                                    <option value="J Downloader">J Downloader</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 2 Selector -->
+                        <div class="form-group" id="selector_multiple">
+                            <label for="q3-1" class="multi_sel">Función </label>
+                            <div class="col-md-4">
+                                <select id="q3-1" name="q3-1" class="form-control">
+                                    <option value="Gestor de Descargas" selected="selected">Gestor de Descargas</option>
+                                    <option value="Diseño 3D">Diseño 3D</option>
+                                    <option value="Editor de Texto">Editor de Texto</option>
+                                    <option value="Diseño Gráfico">Diseño Gráfico</option>
+                                    <option value="Planilla de Cálculos">Planilla de Cálculos</option>
+                                    <option value="Navegador Web">Navegador Web</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- _______________________PREGUNTA 4_________________________________-->
+
+                <div class="quiz_block" id="quiz4">
+
+                    <img src="https://i.imgur.com/qsd2A3C.png" alt="emacs_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Indique el nombre de la distro 100% Free de Arch aprobada por la FSF</p>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="q4"></label>
+                        <div class="col-md-4">
+                            <input id="q4" name="q4" type="text" placeholder="Nombre de la distro"
+                                class="form-control input-md">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- _______________________PREGUNTA 5_________________________________-->
+
+                <div class="quiz_block" id="quiz5">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 5</p> -->
+
+                    <img src="https://i.imgur.com/aOaMOrK.png" alt="rmsf_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">En que fecha nació Richard Stallman?</p>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="q5"></label>
+                        <div class="col-md-4">
+                            <input id="q5" name="q5" type="date" min="1950-01-01" max="1960-12-31"
+                                class="form-control input-md">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- _______________________PREGUNTA 6_________________________________-->
+
+                <div class="quiz_block" id="quiz6">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 6</p> -->
+
+                    <img src="https://i.imgur.com/8Lct8sb.png" alt="stallman_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Seleccione todos las opciones que nombren creaciones de Richard Stallman
+                    </p>
+
+
+                    <!-- Multiple -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="q6-0"></label>
+                        <div class="col-md-4">
+                            <label class="checkbox-inline" for="q6-0">
+                                <input type="checkbox" name="q6" id="q6-0" value="GCC compiler">
+                                GCC compiler
+                            </label>
+                            <label class="checkbox-inline" for="q6-1">
+                                <input type="checkbox" name="q6" id="q6-1" value="Core Boot">
+                                Core Boot
+                            </label>
+                            <label class="checkbox-inline" for="q6-2">
+                                <input type="checkbox" name="q6" id="q6-2" value="Emacs">
+                                Emacs
+                            </label>
+                            <label class="checkbox-inline" for="q6-3">
+                                <input type="checkbox" name="q6" id="q6-3" value="VLC">
+                                VLC
+                            </label>
+                            <label class="checkbox-inline" for="q6-4">
+                                <input type="checkbox" name="q6" id="q6-4" value="CopyLeft">
+                                CopyLeft
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- _______________________PREGUNTA 7_________________________________-->
+
+                <div class="quiz_block" id="quiz7">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 7</p> -->
+
+                    <img src="https://i.imgur.com/4QVdy8a.png" alt="fsf_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">En 2020 se celebra que numero de aniversario de la FSF?</p>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="q7"></label>
+                        <input id="q7" name="q7" type="range" min="0" max="50" class="form-control input-md">
+                        <p id="sliderValue"></p>
+                    </div>
+
+                </div>
+
+                <!-- _______________________PREGUNTA 8_________________________________-->
+
+                <div class="quiz_block" id="quiz8">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 8</p> -->
+
+                    <img src="https://i.imgur.com/67DLZYL.png" alt="trisquel_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Que distribución de linux utiliza Richard Stallman?</p>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="q8"></label>
+                        <div class="col-md-4">
+                            <input id="q8" name="q8" type="text" placeholder="Nombre de la distro"
+                                class="form-control input-md">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- _______________________PREGUNTA 9_________________________________-->
+
+                <div class="quiz_block" id="quiz9">
+
+                    <!-- <p class="quiz_titulo">PREGUNTA 9</p> -->
+
+                    <img src="https://i.imgur.com/TFOozw1.png" alt="openSource_logo" class="quiz_img">
+
+                    <p class="quiz_pregunta">Según Stallman, el movimiento Open Source es perjudicial para el software
+                        libre
+                    </p>
+
+                    <!-- Multiple Radios (inline) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="q9-0"></label>
+                        <div class="col-md-4">
+                            <label class="radio-inline" for="q9-0">
+                                <input type="radio" name="q9" id="q9-0" value="V">V</label>
+                            <label class="radio-inline" for="q9-1">
+                                <input type="radio" name="q9" id="q9-1" value="F">F</label>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Ver Resultado" class="quiz_submit" id="btnVerResultado">
+
+                <script src="qNavigation.js"></script>
+
+
+
+            </div>
+
+            <div id="resultPage">
+                <p id="resultadoNota"></p>
+                <div id="resultadoTexto"></div>
+            </div>
+
+            <script src="formSubmit.js"></script>
+        </div>
+        <footer>
+            <p> TUP - UTN Haedo - Laboratorio III - gonzaloarielrossi@gmail.com - Copyright © 2020 Gonzalo Ariel
+                Rossi,
+                All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
